@@ -1,0 +1,13 @@
+.appBackground {
+    background-image: url("./images/appPlayerBackground.png");
+    width: 800px;
+    height: 600px;
+
+}
+.playerBorder {
+
+    width: 360px;
+    height: 480px;
+    background-color: red;
+}
+
