@@ -126,6 +126,7 @@ class Playlist {
         this.appendIcon($iconsContainer, 'fa fa-share-alt');
         this.appendIcon($iconsContainer, 'fa fa-heart');
         $songContainer.append(this.renderSongInfo(...arguments));
+        console.log(arguments)
         $songContainer.append($iconsContainer);
 
         return $songContainer;
@@ -189,12 +190,5 @@ const songList = [{
     title: 'Nights Like This',
     length: '1:00'
 }];
-
-
-
-// Zmienić nazwy
-// Zmienić nazwy
-// Zmienić nazwy
-// Zmienić nazwy
 
 const Player = new App('[data-widget-container]', songList);
