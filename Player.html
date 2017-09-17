@@ -3,34 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./">
+  <script src="./jquery.min.js"></script>
+  <link rel="stylesheet" href="perfect-scrollbqar.min.css">
 </head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="output.css">
 <body>
 
-<main class="appBackground">
-<div class="playerBorder">
-  <nav>
-      <div class="nav-icons">
-        <button>
-          <span class="icon-loop"></span>
+<div class="app">
+  <div class="widget-container" data-widget-container>
+    <section class="player" data-player-view>
+      <nav>
+        <div class="nav-icons">
+          <button>
+            <span class="icon-loop"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+          </button>
+          <button>
+            <span class="icon-shuffle"><i class="fa fa-random" aria-hidden="true"></i></span>
+          </button>
+          <button>
+            <span class="icon-refresh"><i class="fa fa-repeat" aria-hidden="true"></i></span>
+          </button>
+        </div>
+        <button class="menu-toggle" data-playlist-open></button>
+      </nav>
+      <div class="player-main">
+        <div class="now-playing">
+          <h1 data-current-artist>Icona Pop</h1>
+          <h2 data-current-title>Still Don't Know</h2>
+        </div>
+      </div>
+      <div class="track-controls">
+        <div class="volume-control">
+          <div class="range-left">
+            <span class="icon-audio"><i class="fa fa-volume-up" aria-hidden="true"></i></span>
+          </div>
+        </div>
+        <button class="social-action-button">
+          <span class="icon-share"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
         </button>
-        <button>
-          <span class="icon-shuffle"></span>
-        </button>
-        <button>
-          <span class="icon-refresh"></span>
+
+        <div class="playback-controls">
+          <button class="prev" data-prev>
+            <span class="icon-prev"><i class="fa fa-step-backward" aria-hidden="true"></i></span>
+          </button>
+
+          <div class="play-pause-container">
+            <button class="play-pause" data-play-pause>
+            </button>
+          </div>
+
+          <button class="next" data-next>
+            <span class="icon-next"><i class="fa fa-step-forward" aria-hidden="true"></i></span>
+          </button>
+        </div>
+
+        <button class="social-action-button">
+          <span class="icon-heart"><i class="fa fa-heart" aria-hidden="true"></i></span>
         </button>
       </div>
-      <button class="menu-toggle" data-playlist-open></button>
-  </nav>
-  <div class="playerMain">
-    <div class="nowPlaying">
-      <h1 data-current-artist>Sexmasterka</h1>
-      <h2 data-current-title>Poka sowe badum tss</h2>
-    </div>
+    </section>
+    <section class="playlist" data-playlist-view>
+      <nav>
+        <button class="icon-back" data-playlist-close><i class="fa fa-reply" aria-hidden="true"></i></button>
+        <h2>Playlist</h2>
+      </nav>
+    </section>
   </div>
 </div>
-</main>
-
+<script src="perfect-scrollbar.jquery.min.js"></script>
+<script src="./index.js"></script>
 </body>
 </html>
